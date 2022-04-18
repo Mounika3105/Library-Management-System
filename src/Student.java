@@ -207,7 +207,8 @@ PreparedStatement pst;
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
-        pack();
+        setSize(new java.awt.Dimension(472, 449));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed

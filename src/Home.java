@@ -88,6 +88,11 @@ public class Home extends javax.swing.JFrame {
         });
 
         jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Lakshmi Mounika\\Downloads\\Sem 2 2021-22\\OOP\\statistics_new.png")); // NOI18N
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel5.setText("New Book");
@@ -138,8 +143,18 @@ public class Home extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 204, 0), 3), "Action", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 24), new java.awt.Color(255, 0, 0))); // NOI18N
 
         jButton5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Lakshmi Mounika\\Downloads\\Sem 2 2021-22\\OOP\\returnbook_new.png")); // NOI18N
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         jButton6.setIcon(new javax.swing.ImageIcon("C:\\Users\\Lakshmi Mounika\\Downloads\\Sem 2 2021-22\\OOP\\about2_new.png")); // NOI18N
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Lakshmi Mounika\\Downloads\\Sem 2 2021-22\\OOP\\issuebook_new.png")); // NOI18N
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -164,7 +179,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
                 .addComponent(jButton5)
                 .addGap(72, 72, 72)
                 .addComponent(jButton6)
@@ -270,7 +285,7 @@ public class Home extends javax.swing.JFrame {
                 .addGap(49, 49, 49))
         );
 
-        setSize(new java.awt.Dimension(743, 666));
+        setSize(new java.awt.Dimension(742, 694));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -306,6 +321,27 @@ public class Home extends javax.swing.JFrame {
         Issue ob=new Issue();
         ob.setVisible(true);
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        setVisible(false);
+        Return ob=new Return();
+        ob.setVisible(true);
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        setVisible(false);
+        Statistics ob=new Statistics();
+        ob.setVisible(true);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        setVisible(false);
+        About ob=new About();
+        ob.setVisible(true);
+    }//GEN-LAST:event_jButton6ActionPerformed
 
     /**
      * @param args the command line arguments
